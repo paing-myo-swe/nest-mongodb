@@ -1,0 +1,26 @@
+### Get recipes List
+GET http://localhost:3000/recipes
+
+### Get recipe by id
+GET http://localhost:3000/recipes/67ad791853c530d3d1a92586
+
+### Create recipe
+POST http://localhost:3000/recipes
+Content-Type: application/json
+
+{
+    "name": "Recipe 1",
+    "isFavorite": true
+}
+
+### Update recipe
+PATCH  http://localhost:3000/recipes/67ad791853c530d3d1a92586
+Content-Type: application/json
+
+{
+    "name": "Recipe edited",
+    "isFavorite": false
+}
+
+### Delete recipe
+DELETE http://localhost:3000/recipes/67ad791853c530d3d1a92586
